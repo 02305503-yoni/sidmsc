@@ -1,0 +1,130 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background-color: #000;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid #e63946;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    color: #e63946;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navegación */
+nav {
+    background-color: #222;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #f1faee;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e63946;
+    border-radius: 5px;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.imagen-principal, .imagen-seccion {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #e63946;
+}
+
+.texto h2 {
+    color: #e63946;
+    margin-bottom: 1rem;
+}
+
+h2, h3 {
+    color: #e63946;
+    margin: 1.2rem 0 0.8rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+/* Galería de trabajos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tarjeta {
+    background-color: #2b2b2b;
+    padding: 1.2rem;
+    border-radius: 10px;
+    border-left: 4px solid #e63946;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 3px solid #e63946;
+}
